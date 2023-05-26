@@ -7,7 +7,6 @@ let CardContainer = () => {
     let APIKEY = process.env.REACT_APP_APIKEY;
     
     const [images, setImages] = useState([]);
-    const [newImages, setNewImages] = useState([]);
     
     const fetchData = async () => {
         try {
@@ -34,7 +33,6 @@ let CardContainer = () => {
     
   let handleClick = () => {
     fetchData()
-    createMore()
   }
     
     return (
@@ -44,7 +42,6 @@ let CardContainer = () => {
             </header>
             <section className="imageContainer">
                 {images.map((img, index) => <ImageCard key={index} data={img} />)}
-                {createMore}
             </section>
             <button onClick={handleClick}>Load more images</button>
         </main>

@@ -7,6 +7,7 @@ let CardContainer = () => {
     let APIKEY = process.env.REACT_APP_APIKEY;
     
     const [images, setImages] = useState([]);
+    const [newImages, setNewImages] = useState([]);
     
     const fetchData = async () => {
         try {
@@ -26,6 +27,7 @@ let CardContainer = () => {
     }, []); 
     
     const createMore = () => {
+        
        return images.map((img, index) => <ImageCard key={index} data={img} />)
     }
         

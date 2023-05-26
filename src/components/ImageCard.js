@@ -22,10 +22,10 @@ let ImageCard = (props) => {
 
     return (
         <article className="cell">
-            <div>
                 <img style={likeStyle} src={`${data.url}`} alt="Cat Image" className="catImage" />
-            </div>
             <h3 className="postId">{data.id}</h3>
+            <p>This is best I could do with the limited info this api sends back. 
+                Image source: {data.url}</p>
             <div className="btnWrapper">
                 <button className="likeBtn" style={likeStyle} onClick={handleLike}>Like</button>
             </div>

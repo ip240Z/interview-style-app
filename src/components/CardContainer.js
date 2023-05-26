@@ -38,7 +38,7 @@ let CardContainer = () => {
     return (
         <main className="appWrapper">
             <header>
-                <h2>CardContainer</h2>
+                <h2>Interview cats</h2>
             </header>
             <section className="imageContainer">
                 {images.map((img, index) => <ImageCard key={index} data={img} />)}

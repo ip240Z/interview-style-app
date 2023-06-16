@@ -26,7 +26,6 @@ let CardContainer = () => {
     }, []); 
     
     const createMore = () => {
-        
        return images.map((img, index) => <ImageCard key={index} data={img} />)
     }
         
@@ -38,7 +37,7 @@ let CardContainer = () => {
     return (
         <main className="appWrapper">
             <header>
-                <h2>Interview cats</h2>
+                <h2>Interview</h2>
             </header>
             <section className="imageContainer">
                 {images.map((img, index) => <ImageCard key={index} data={img} />)}
